@@ -1,0 +1,97 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "copyOnSelect": false,
+    "copyFormatting": false,
+    "profiles": {
+        "defaults": {
+            "useAcrylic": true,
+            "acrylicOpacity": 0.5
+        },
+        "list": [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Command Prompt",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "%USERPROFILE%",
+                "colorScheme": "Atom",
+                "useAcrylic": true,
+                "acrylicOpacity": 0.5
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "Atom",
+            "black": "#000000",
+            "red": "#fd5ff1",
+            "green": "#006122",
+            "yellow": "#ffd7b1",
+            "blue": "#85befd",
+            "purple": "#b9b6fc",
+            "cyan": "#85befd",
+            "white": "#e0e0e0",
+            "brightBlack": "#000000",
+            "brightRed": "#fd5ff1",
+            "brightGreen": "#94fa36",
+            "brightYellow": "#f5ffa8",
+            "brightBlue": "#96cbfe",
+            "brightPurple": "#b9b6fc",
+            "brightCyan": "#85befd",
+            "brightWhite": "#e0e0e0",
+            "background": "#161719",
+            "foreground": "#c5c8c6"
+        },
+        {
+            "name": "Blazer",
+            "black": "#000000",
+            "red": "#b87a7a",
+            "green": "#7ab87a",
+            "yellow": "#b8b87a",
+            "blue": "#7a7ab8",
+            "purple": "#b87ab8",
+            "cyan": "#7ab8b8",
+            "white": "#d9d9d9",
+            "brightBlack": "#262626",
+            "brightRed": "#dbbdbd",
+            "brightGreen": "#bddbbd",
+            "brightYellow": "#dbdbbd",
+            "brightBlue": "#bdbddb",
+            "brightPurple": "#dbbddb",
+            "brightCyan": "#bddbdb",
+            "brightWhite": "#ffffff",
+            "background": "#0d1926",
+            "foreground": "#d9e6f2"
+          }
+    ],
+    "keybindings": [
+        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+        { "command": "paste", "keys": "ctrl+v" },
+        { "command": "find", "keys": "ctrl+shift+f" },
+        { "command": "newTab", "keys": "ctrl+t" },
+        { "command": "nextTab", "keys": "ctrl+tab" },
+        { "command": "prevTab", "keys": "ctrl+shift+tab" },
+        { "command": "closeTab", "keys": "ctrl+w" },
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+    ]
+}
+
